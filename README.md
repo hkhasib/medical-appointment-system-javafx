@@ -12,6 +12,9 @@ It was my final Javafx Project before semester final of Java course.
 <li>Many other Small Features</li>
 
 <h2>A Few Screenshots</h2>
+
+These screenshots are from last year when I planned to upload in github. But, Could not manage time as me including my family sufferred from Covid 19 and situations went out of control for a long time.
+
 <a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/kGfZ7rdk/2021-09-27-13-07-31.png" alt="2021-09-27-13-07-31"/></a><br/><br/>
 <a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/gcD1Vh6N/2021-09-27-13-08-10.png" alt="2021-09-27-13-08-10"/></a><br/><br/>
 <a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/FK3B7k4b/2021-09-27-13-09-16.png" alt="2021-09-27-13-09-16"/></a><br/><br/>
