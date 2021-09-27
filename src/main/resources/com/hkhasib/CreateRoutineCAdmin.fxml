@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1250.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hkhasib.CreateRoutineCAdmin">
+    <children>
+        <Pane id="logo" layoutX="26.0" layoutY="38.0" prefHeight="69.0" prefWidth="180.0" />
+        <Text fill="#1c4b9e" layoutX="1050.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Central Admin" wrappingWidth="180.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <ComboBox layoutX="1035.0" layoutY="25.0" prefHeight="44.0" prefWidth="204.0" promptText="John Doe" />
+        <TextField layoutX="307.0" layoutY="50.0" prefHeight="44.0" prefWidth="451.0" promptText="Search Doctor" />
+        <Text fill="#2c3340" layoutX="268.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Routine Maker" wrappingWidth="500.0">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Text>
+        <Pane id="profile" layoutX="956.0" layoutY="25.0" prefHeight="69.0" prefWidth="79.0" />
+        <VBox layoutX="26.0" layoutY="132.0" prefHeight="623.0" prefWidth="226.0">
+            <children>
+                <Button id="sideButton" mnemonicParsing="false" prefHeight="53.0" prefWidth="204.0" text="Dashboard">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button id="sideButton" mnemonicParsing="false" prefHeight="53.0" prefWidth="204.0" styleClass="commonButton" text="Appointments">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button id="sideButton" mnemonicParsing="false" prefHeight="53.0" prefWidth="204.0" styleClass="commonButton" text="Doctors" textAlignment="CENTER">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button id="sideButton" layoutX="10.0" layoutY="116.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="204.0" styleClass="commonButton" text="Routines" textAlignment="CENTER">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button id="sideButton" layoutX="10.0" layoutY="169.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="204.0" styleClass="commonButton" text="Settings" textAlignment="CENTER">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+      <GridPane id="commonPane" layoutX="268.0" layoutY="252.0" prefHeight="510.0" prefWidth="957.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="155.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" wrappingWidth="121.13671875">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sun" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.columnIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="132.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mon" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.columnIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="254.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tue" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.columnIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="375.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wed" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.columnIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="496.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thu" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.columnIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="617.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fri" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.columnIndex="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="738.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sat" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.columnIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#1b4cd3" layoutX="10.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6 AM to 9 AM" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b4cd3" layoutX="10.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9 AM to 12 PM" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b4cd3" layoutX="10.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 PM to 3 PM" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b4cd3" layoutX="10.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 PM to 6 PM" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.rowIndex="4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b4cd3" layoutX="10.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6 PM to 9 PM" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.rowIndex="5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b4cd3" layoutX="10.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9 PM to 12 AM" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.rowIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b4cd3" layoutX="10.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 AM to 3 AM" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.rowIndex="7">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#1b4cd3" layoutX="10.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 AM to 6 AM" textAlignment="CENTER" wrappingWidth="121.13671875" GridPane.rowIndex="8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <CheckBox mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="165.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="165.0" layoutY="138.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="165.0" layoutY="195.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="165.0" layoutY="252.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="165.0" layoutY="309.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="165.0" layoutY="365.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="165.0" layoutY="421.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="165.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="280.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="280.0" layoutY="138.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="280.0" layoutY="195.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="280.0" layoutY="252.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="280.0" layoutY="309.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="280.0" layoutY="365.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="280.0" layoutY="421.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="280.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="395.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="395.0" layoutY="138.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="395.0" layoutY="195.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="395.0" layoutY="252.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="395.0" layoutY="309.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="395.0" layoutY="365.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="395.0" layoutY="421.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="395.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="510.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="510.0" layoutY="138.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="510.0" layoutY="195.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="510.0" layoutY="252.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="510.0" layoutY="309.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="510.0" layoutY="365.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="510.0" layoutY="421.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="510.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="625.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="625.0" layoutY="138.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="625.0" layoutY="195.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="625.0" layoutY="252.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="625.0" layoutY="309.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="625.0" layoutY="365.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="625.0" layoutY="421.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="625.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="739.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="739.0" layoutY="138.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="739.0" layoutY="195.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="739.0" layoutY="252.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="739.0" layoutY="309.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="739.0" layoutY="365.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="739.0" layoutY="421.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="739.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="853.0" layoutY="81.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="853.0" layoutY="138.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="853.0" layoutY="195.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="853.0" layoutY="252.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="853.0" layoutY="309.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="853.0" layoutY="365.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox layoutX="853.0" layoutY="421.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="118.0" text="Select" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.rowIndex="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </GridPane>
+      <ComboBox layoutX="622.0" layoutY="183.0" prefHeight="44.0" prefWidth="249.0" promptText="Select Doctor" />
+      <Button id="commonButton" layoutX="666.0" layoutY="783.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="153.0" text="Add" />
+    </children>
+</AnchorPane>

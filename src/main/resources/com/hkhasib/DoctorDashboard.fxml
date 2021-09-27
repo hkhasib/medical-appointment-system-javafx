@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1250.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hkhasib.DoctorDashboard">
+    <children>
+        <Pane id="logo" layoutX="26.0" layoutY="38.0" prefHeight="69.0" prefWidth="180.0" />
+        <Text fill="#1c4b9e" layoutX="1050.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor" wrappingWidth="180.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <ComboBox fx:id="profileName" layoutX="1035.0" layoutY="25.0" onAction="#profileNameAction" prefHeight="44.0" prefWidth="204.0" promptText="John Doe" />
+        <Pane id="commonPane" fx:id="nextAppointmentCard" layoutX="274.0" layoutY="213.0" prefHeight="173.0" prefWidth="351.0">
+            <children>
+                <Text fill="#403a3a" layoutX="51.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Next Patient" textAlignment="CENTER" wrappingWidth="248.13671875">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Text>
+                <Pane id="profile" layoutX="26.0" layoutY="56.0" prefHeight="69.0" prefWidth="79.0" />
+                <Text fx:id="patientNameText" layoutX="113.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Appointment" wrappingWidth="232.0">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text fx:id="nextAppointmentTime" layoutX="6.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16 Dec 2020" textAlignment="CENTER" wrappingWidth="338.9189453125">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <Text fx:id="phoneText" layoutX="113.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="017000000" wrappingWidth="140.779296875">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+            </children>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Pane>
+        <TextField layoutX="307.0" layoutY="50.0" prefHeight="44.0" prefWidth="451.0" promptText="Search Doctor" />
+        <Text fill="#2c3340" layoutX="274.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Dashboard" wrappingWidth="388.05078125">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Text>
+        <TableView id="commonPane" fx:id="appointmentTable" layoutX="274.0" layoutY="459.0" prefHeight="352.0" prefWidth="351.0">
+            <columns>
+                <TableColumn fx:id="dateCol" prefWidth="114.0" text="Date" />
+                <TableColumn fx:id="timeCol" prefWidth="107.0" text="Time" />
+                <TableColumn fx:id="docNameCol" prefWidth="137.0" text="Patient" />
+            </columns>
+        </TableView>
+        <Text layoutX="331.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upcoming Patients" wrappingWidth="224.517578125">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Pane id="commonPane" layoutX="667.0" layoutY="554.0" prefHeight="257.0" prefWidth="545.0">
+            <children>
+                <BarChart fx:id="appointmentChart" layoutX="23.0" layoutY="10.0" prefHeight="238.0" prefWidth="500.0" title="Overall Patients">
+                    <xAxis>
+                        <CategoryAxis label="Month" side="BOTTOM" fx:id="x" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis fx:id="y" label="Number of Patients" side="LEFT" />
+                    </yAxis>
+                </BarChart>
+            </children>
+        </Pane>
+        <Pane id="profile" layoutX="956.0" layoutY="25.0" prefHeight="69.0" prefWidth="79.0" />
+      <Pane id="commonPane" layoutX="662.0" layoutY="213.0" prefHeight="313.0" prefWidth="545.0">
+         <children>
+            <Text fill="#403a3a" layoutX="148.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Note" textAlignment="CENTER" wrappingWidth="248.13671875">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="patientNoteField" editable="false" layoutX="23.0" layoutY="72.0" prefHeight="218.0" prefWidth="500.0" />
+         </children>
+      </Pane>
+      <VBox alignment="TOP_CENTER" layoutX="26.0" layoutY="127.0" prefHeight="623.0" prefWidth="232.0" spacing="30.0">
+         <children>
+            <Button id="dashboardButton" contentDisplay="TOP" disable="true" mnemonicParsing="false" prefHeight="53.0" prefWidth="204.0" text="Dashboard" textFill="#16213c">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#9fd7f2" />
+               </effect>
+            </Button>
+            <Button id="settingButton" disable="true" layoutX="24.0" layoutY="259.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="204.0" text="Settings" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
