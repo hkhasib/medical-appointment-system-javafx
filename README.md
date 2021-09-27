@@ -30,3 +30,5 @@ These screenshots are from last year when I planned to upload in github. But, Co
 <li>After building and running this app, you will be asked to input DB credentails</li>
 <li>After that, You will have option to create accounts for central admin.</li>
 <li>When all the configurations are done, you can add other users like doctors, patients, front-desks by signing into the Central Admin account.</li>
+
+Note: You can delete the dbConfig.properties from the project folder safely before running it for the first-time. However, After configuring, If you run it, you will lose your database configuration. So, You will have to configure/give the credentails again after next initial run.
