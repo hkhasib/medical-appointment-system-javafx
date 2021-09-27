@@ -1,4 +1,4 @@
-# Medical Appointment System Desktop Software in JavaFX - Student Project
+# Medical Appointment System Desktop Software in Java - JavaFX Student Project
 It was my final Javafx Project before semester final of Java course.
 
 <h2>Features:</h2>
