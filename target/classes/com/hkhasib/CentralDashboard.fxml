@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1250.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hkhasib.CentralDashboard">
+    <children>
+        <Pane id="logo" layoutX="26.0" layoutY="38.0" prefHeight="69.0" prefWidth="180.0" />
+        <Text fill="#1c4b9e" layoutX="1050.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Central Admin" wrappingWidth="180.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <ComboBox fx:id="profileName" layoutX="1035.0" layoutY="25.0" onAction="#profileNameAction" prefHeight="44.0" prefWidth="204.0" promptText="Central Admin" />
+        <TextField layoutX="307.0" layoutY="50.0" prefHeight="44.0" prefWidth="382.0" promptText="Search Doctor" />
+        <Text fill="#2c3340" layoutX="274.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Central Dashboard" wrappingWidth="388.05078125">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Text>
+        <Pane id="profile" layoutX="956.0" layoutY="25.0" prefHeight="69.0" prefWidth="79.0" />
+        <VBox alignment="TOP_CENTER" layoutX="26.0" layoutY="123.0" prefHeight="692.0" prefWidth="232.0" spacing="30.0">
+            <children>
+            <Button id="dashboardButton" contentDisplay="TOP" disable="true" layoutX="24.0" layoutY="10.0" mnemonicParsing="false" onAction="#dashboardBTNAction" prefHeight="53.0" prefWidth="204.0" text="Dashboard" textFill="#16213c">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#9fd7f2" />
+               </effect>
+            </Button>
+                <Button id="bookButton" layoutX="10.0" layoutY="116.0" mnemonicParsing="false" onAction="#bookBTNAction" prefHeight="53.0" prefWidth="204.0" text="Book Appoint." textAlignment="CENTER">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            <Button id="allAppointmentButton" mnemonicParsing="false" onAction="#appointmentsBTNAction" prefHeight="53.0" prefWidth="204.0" text="Appointments" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button id="routineButton" layoutX="24.0" layoutY="93.0" mnemonicParsing="false" onAction="#createRoutineBTNAction" prefHeight="53.0" prefWidth="204.0" text="Doctor Routine" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+                <Button id="patientButton" layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onAction="#createPatientBTNAction" prefHeight="53.0" prefWidth="204.0" text="Create Patient" textAlignment="CENTER">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            <Button id="doctorButton" layoutX="24.0" layoutY="176.0" mnemonicParsing="false" onAction="#createDoctorBTNAction" prefHeight="53.0" prefWidth="204.0" text="Create Doctor" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button id="frontButton" layoutX="24.0" layoutY="259.0" mnemonicParsing="false" onAction="#createFrontBTNAction" prefHeight="53.0" prefWidth="204.0" text="Create FrontUser" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button id="departmentButton" layoutX="24.0" layoutY="342.0" mnemonicParsing="false" onAction="#createDepartmentBTNAction" prefHeight="53.0" prefWidth="204.0" text="Create Departmnt" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+                <Button id="settingButton" layoutX="10.0" layoutY="116.0" mnemonicParsing="false" onAction="#settingsBTNAction" prefHeight="53.0" prefWidth="204.0" text="Settings" textAlignment="CENTER">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <Pane id="commonPane" layoutX="274.0" layoutY="186.0" prefHeight="124.0" prefWidth="204.0">
+            <children>
+                <Text fill="#103386" layoutX="43.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Doctors" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text fx:id="totalDoctorText" fill="#103386" layoutX="70.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000" textAlignment="CENTER">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+            </children></Pane>
+        <Pane id="commonPane" layoutX="274.0" layoutY="342.0" prefHeight="484.0" prefWidth="415.0">
+            <children>
+                <TableView fx:id="doctorTable" layoutX="13.0" layoutY="44.0" onMouseClicked="#tableClickAction" prefHeight="422.0" prefWidth="388.0">
+                    <columns>
+                        <TableColumn fx:id="nameCol" prefWidth="108.0" text="Name" />
+                        <TableColumn fx:id="phoneCol" prefWidth="156.0" text="Phone" />
+                        <TableColumn fx:id="depCol" prefWidth="123.0" text="Department" />
+                    </columns>
+                </TableView>
+                <Text layoutX="151.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor List" textAlignment="CENTER" wrappingWidth="112.32421875">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Pane id="commonPane" layoutX="768.0" layoutY="342.0" prefHeight="484.0" prefWidth="445.0">
+            <children>
+                <TableView fx:id="routineTable" layoutX="29.0" layoutY="41.0" prefHeight="422.0" prefWidth="388.0">
+                    <columns>
+                        <TableColumn fx:id="dayCol" prefWidth="161.0" text="Day" />
+                        <TableColumn fx:id="fromCol" prefWidth="103.0" text="From" />
+                        <TableColumn fx:id="toCol" prefWidth="123.0" text="To" />
+                    </columns>
+                </TableView>
+                <Text layoutX="166.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor Routine" textAlignment="CENTER" wrappingWidth="112.32421875">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Button layoutX="706.0" layoutY="51.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="79.0" text="Search" />
+        <Pane id="commonPane" layoutX="602.0" layoutY="186.0" prefHeight="124.0" prefWidth="288.0">
+            <children>
+                <Text fill="#103386" layoutX="17.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upcoming Appointments" textAlignment="CENTER" wrappingWidth="253.44140625">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text fx:id="upcomingAppointmentText" fill="#103386" layoutX="68.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000" textAlignment="CENTER" wrappingWidth="151.6875">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Pane id="commonPane" layoutX="1009.0" layoutY="186.0" prefHeight="124.0" prefWidth="204.0">
+            <children>
+                <Text fill="#103386" layoutX="42.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Patients" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Text>
+                <Text fx:id="totalPatientsText" fill="#103386" layoutX="70.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0000" textAlignment="CENTER">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
